@@ -1,11 +1,12 @@
 body {
     margin: 0;
     /* background-image: linear-gradient(rgb(24, 50, 133), rgb(19, 41, 87),rgb(14, 14, 47) ); */
-    background-image: linear-gradient(45deg, rgb(7, 5, 37), rgb(56, 52, 97));
+    background-image: linear-gradient(90deg, #061d2c, rgb(40, 90, 114), #061d2c);
     color: white;
 
 }
-.main.active{
+
+.main.active {
     filter: blur(10px);
     transition: 0.2s ease;
 }
@@ -17,11 +18,14 @@ body {
 nav {
     border-bottom: solid white;
     border-width: 0.3px;
-    font-family: "Poppins", sans-serif;
-    padding: 10% 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    /* padding: 10% 0; */
     display: flex;
-    justify-content: space-around;
-    padding: 2% 15% 2% 15%;
+    justify-content: space-between;
+    padding: 2% 10% 2% 10%;
 
 }
 
@@ -39,15 +43,21 @@ nav {
     color: #6e6e6e;
 }
 
-
+.navbar-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4%;
+    width: 55%;
+}
 
 /* menu buttons */
 .navbar-links a {
-    color: #fff;
+    color: #ffffff;
     text-align: center;
+    font-size: 1.2rem;
     text-decoration: none;
-    /* padding: 2% ; */
-    padding: 4px;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -69,9 +79,13 @@ nav {
 .diff-subject {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     align-items: center;
-    gap: 20%;
+    gap: 10%;
+    margin: 2% 10%;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
 }
 
 
@@ -79,16 +93,18 @@ nav {
 
 
 
-  
+
 .custom-select select {
-    display: block;
+    display: flex;
     padding: 10px;
     font-size: 16px;
-    
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
     color: #000000;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #fff;
+    background-color: #cab9a0;
 
 }
 
@@ -99,19 +115,20 @@ nav {
 
 .custom-select select:focus {
     outline: none;
-    border-color: #007bff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    border-color: #423003;
+    box-shadow: 0 0 5px rgb(71, 56, 5);
 }
 
-.custom-select option {
+.custom-select select option {
     background-color: #ffffff;
     padding: 20px;
     color: #333;
 }
 
-.custom-select option:hover {
+.custom-select select option:hover {
     background-color: #e9e9e9;
     color: #000000;
+    cursor: pointer;
 }
 
 
@@ -120,45 +137,58 @@ nav {
 
 
 
-
-/* subjects quiz */
-.two-sub {
+.subjects .two-sub {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
-    padding: 2% 5% 2% 5%;
+    
+}
+
+.subject-div {
+    display: flex;
+    justify-content: center;
+    
+    width: 40%;
+    margin: 2%;
+    height: 50%;
 }
 
 .dbms,
-.ops {
-    font-family: "Raleway", sans-serif;
-    font-weight: 500;
+.ops,
+.cloud,
+.web-dev {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
     font-style: normal;
-    width: 40%;
     display: flex;
     flex-direction: column;
-    padding: 3%;
+    padding: 5% 7%;
     justify-content: space-evenly;
-    width: 70%;
+    width: 100%;
+    
+    border: inset #948979;
+    border-radius: 20px;
+    background-color: #051b2b;
 }
 
 .buttons button {
-    background-color: pink;
-    padding: 1% 1%;
+    background-color: #cab9a0;
+    padding: 1.8% 2%;
     font-size: 1rem;
-    font-family: "Raleway", sans-serif;
-    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
     font-style: normal;
     border-radius: 10px;
 }
 
 .buttons button:hover {
-    color: rgb(251, 185, 196);
-    background-color: rgb(7, 5, 37);
+    color: #cab9a0;
+    background-color: rgb(27, 57, 78);
+    border: outset #cab9a0;
     cursor: pointer;
     border: 0px;
 }
-
-
 
 
 
@@ -175,9 +205,11 @@ nav {
 
 
 .popup-info {
-    position: absolute;
-    font-family: "Raleway", sans-serif;
-    font-weight: 500;
+    position: fixed;
+    color: #cab9a0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
     font-style: normal;
     background-color: black;
     top: 50%;
@@ -191,17 +223,21 @@ nav {
     opacity: 0;
     pointer-events: none;
 }
+
 .popup-info.active {
     opacity: 1;
-    transition:  0.6s ease;
+    transition: 0.6s ease;
     transform: translate(-50%, -50%) scale(1);
     pointer-events: auto;
 }
+
 /* .popup-info:hover{
     transition: ease-in 0.2s;
 } */
 
 .popup-info h2 {
+    color: #cab9a0;
+    text-align: center;
     font-size: 2rem;
 }
 
@@ -213,30 +249,101 @@ nav {
 }
 
 .btn-grp button {
-    background-color: pink;
+    background-color: #cab9a0;
     padding: 2% 5%;
     font-size: 1rem;
     border-radius: 10px;
-    font-family: "Raleway", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
 }
-.btn-grp button:nth-child(1){
+
+.btn-grp button:nth-child(1) {
     background-color: rgb(7, 5, 37);
-    color: rgb(251, 185, 196);
+    color: #cab9a0;
     border: 0px;
 }
-.btn-grp button:nth-child(1):hover{
-    background-color: pink;
+
+.btn-grp button:nth-child(1):hover {
+    background-color: #cab9a0;
     color: black;
 }
+
 .btn-grp button:hover {
     cursor: pointer;
-    color: rgb(251, 185, 196);
+    color: #cab9a0;
     background-color: rgb(7, 5, 37);
     border: 0px;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* contact me div things */
+#contact-div{
+    background-color: #cab9a0;
+    color: rgb(7, 5, 37);
+    margin-top: 5%;
+    height: 150px;
+    display:  flex;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    gap: 4rem;
+}
+.visiting{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.email-icon {
+    height: 40px;
+}
+.email-icon:hover{
+    transition: 0.2s;
+    height: 50px;
+}
+.github-icon, .linkedin-icon{
+    height: 40px;
+    align-self: center;
+}
+.github-icon:hover , .linkedin-icon:hover{
+    transition: 0.25s;
+    height: 51px;
+}
+.contact-me-icons{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15%;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
