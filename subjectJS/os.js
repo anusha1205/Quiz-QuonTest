@@ -1,15 +1,15 @@
 function calculateScore() {
     const correctAnswers = {
-        Q1: 'a',
-        Q2: 'd',
-        Q3: 'c',
-        Q4: 'b',
-        Q5: 'b',
-        Q6: 'a',
-        Q7: 'a',
-        Q8: 'c',
-        Q9: 'd',
-        Q10: 'a'
+        q1: 'd',
+        q2: 'a',
+        q3: 'b',
+        q4: 'a',
+        q5: 'b',
+        q6: 'b',
+        q7: 'a',
+        q8: 'b',
+        q9: 'b',
+        q10: 'a'
     };
 
     let score = 0;
@@ -69,4 +69,8 @@ function calculateScore() {
             }
         }
     });
+
+    // Show the popup
+    const popupContent = document.querySelector('.popup-content');
+    popupContent.classList.add('active');
 }

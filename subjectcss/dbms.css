@@ -8,10 +8,32 @@ body {
     font-weight: 400;
 }
 
+/* nav score */
+.score-button {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background: transparent;
+    border: 0;
+    font-size: 1.2rem;
+    color: #fff;
+}
+.score-button:hover{
+    background: transparent;
+    color: #6e6e6e;
+    cursor: pointer;
+}
+
+
+
+
+
+
 .container-2 {
     width: 50%;
     margin: auto;
-    padding: 1% 4% ;
+    padding: 1% 4%;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.489);
     margin-top: 50px;
@@ -22,28 +44,33 @@ h1 {
 }
 
 .question {
-    border: ridge black;
-    
+    border: ridge #1e72aa;
+
     border-radius: 10px;
     padding: 4%;
     margin: 3%;
 }
-.question div{
+
+.question div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.question .label-div{
+
+.question .label-div {
     display: flex;
-    flex-direction: row;    
-    
+    flex-direction: row;
+
 }
-.question p{
+
+.question p {
     font-size: 1.4rem;
+    text-align: center;
     text-decoration: dotted;
-    
+
 }
-.label-div label{
+
+.label-div label {
     color: #061d2c;
     background-color: #e3d7c5;
     border-radius: 10px;
@@ -53,7 +80,8 @@ h1 {
     gap: 50%;
     width: 50%;
 }
-.label-div label:hover{
+
+.label-div label:hover {
     background-color: #cab9a0;
     border-radius: 10px;
     cursor: pointer;
@@ -61,7 +89,22 @@ h1 {
 
 
 
-button {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.submit-button {
     display: block;
     width: 20%;
     padding: 10px;
@@ -76,7 +119,7 @@ button {
     align-self: center;
 }
 
-button:hover {
+.submit-button:hover {
     background: #cab9a0;
     color: #061d2c;
 }
@@ -86,6 +129,7 @@ button:hover {
     font-size: 20px;
     text-align: center;
 }
+
 .popup {
     position: fixed;
     top: 50%;

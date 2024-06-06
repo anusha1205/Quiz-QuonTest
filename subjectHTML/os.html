@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OS Quiz</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@500&family=Raleway:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:wght@500&family=Raleway:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="/Quiz QuonTest/images/logo.jpg">
+
+
+    <link rel="stylesheet" href="/Quiz QuonTest/style.css">
+    <link rel="stylesheet" href="/Quiz QuonTest/subjectcss/dbms.css">
+    <script src="/Quiz QuonTest/subjectJS/os.js"></script>
+
+    <!-- CHART for score -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+    <nav>
+        <div class="navbar-brand">
+            <a href="/Quiz QuonTest/index.html" style="display: flex;align-items: flex-end;"><img
+                    src="/Quiz QuonTest/images/logo.jpg" alt="Q" style="width: 15%;border-radius: 100%;">uiz
+                QuonTest</a>
+        </div>
+        <div class="navbar-links">
+            <a href="#">Create Your Quiz</a>
+            <a href="#"><button type="button" class="score-button" onclick="calculateScore()">Score</button></a>
+            <a href="#contact-div">Contact</a>
+            <a href="" style="gap: 8px;width: fit-content;"><img src="/Quiz QuonTest/images/profileimage.png"
+                    alt="Your-profile" style="border-radius: 100%;width: 25%;">Profile</a>
+        </div>
+    </nav>
+    <div class="container-2">
+        <h1>Database Management System Quiz</h1>
+        <form id="quizForm">
+            <div class="question">
+                <p>1. What is the role of an operating system?</p>
+                <div class="label-div">
+                    <label><input type="radio" name="q1" value="a"> A. Manage hardware resources</label><br>
+                    <label><input type="radio" name="q1" value="b"> B. Run applications</label><br>
+                </div>
+                <div class="label-div">
+                    <label><input type="radio" name="q1" value="c"> C. Provide user interface</label><br>
+                    <label><input type="radio" name="q1" value="d"> D. All of the above</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>2. What is multitasking in operating systems?</p>
+                <div class="label-div">
+                    <label><input type="radio" name="q2" value="a"> A. Running multiple applications
+                        simultaneously</label><br>
+                    <label><input type="radio" name="q2" value="b"> B. Switching between applications</label><br>
+                </div>
+                <div class="label-div">
+                    <label><input type="radio" name="q2" value="c"> C. Managing memory allocation</label><br>
+                    <label><input type="radio" name="q2" value="d"> D. None of the above</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>3. What is virtual memory in operating systems?</p>
+                <div class="label-div">
+                    <label><input type="radio" name="q3" value="a"> A. Physical memory allocated for system
+                        processes</label><br>
+                    <label><input type="radio" name="q3" value="b"> B. Secondary storage used as an extension of
+                        RAM</label><br>
+                </div>
+                <div class="label-div">
+                    <label><input type="radio" name="q3" value="c"> C. A software component for managing hardware
+                        devices</label><br>
+                    <label><input type="radio" name="q3" value="d"> D. None of the above</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>4. What is a process in an operating system?</p>
+                <div class="label-div">
+                    <label><input type="radio" name="q4" value="a"> A. A program in execution</label><br>
+                    <label><input type="radio" name="q4" value="b"> B. A file stored on disk</label><br>
+                </div>
+                <div class="label-div">
+                    <label><input type="radio" name="q4" value="c"> C. A user account</label><br>
+                    <label><input type="radio" name="q4" value="d"> D. None of the above</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>5. What is a kernel in operating systems?</p>
+                <div class="label-div">
+                    <label><input type="radio" name="q5" value="a"> A. An application software</label><br>
+                    <label><input type="radio" name="q5" value="b"> B. The central component that manages hardware and
+                        software</label><br>
+                </div>
+                <div class="label-div">
+                    <label><input type="radio" name="q5" value="c"> C. A type of file system</label><br>
+                    <label><input type="radio" name="q5" value="d"> D. A network protocol</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>6. What is a file system in an operating system?</p>
+                <div class="label-div">
+                    <label><input type="radio" name="q6" value="a"> A. A hardware component</label><br>
+                    <label><input type="radio" name="q6" value="b"> B. Software for managing files and
+                        directories</label><br>
+                </div>
+                <div class="label-div">
+                    <label><input type="radio" name="q6" value="c"> C. A user interface</label><br>
+                    <label><input type="radio" name="q6" value="d"> D. None of the above</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>7. What is a deadlock in operating systems?</p>
+                <div class="label-div">
+                    <label><input type="radio" name="q7" value="a"> A. A situation where two processes are waiting for
+                        each other to release resources</label><br>
+                    <label><input type="radio" name="q7" value="b"> B. A system crash</label><br>
+                </div>
+                <div class="label-div">
+                    <label><input type="radio" name="q7" value="c"> C. A hardware failure</label><br>
+                    <label><input type="radio" name="q7" value="d"> D. None of the above</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>8. What is paging in virtual memory management?</p>
+                <div class="label-div">
+                    <label><input type="radio" name="q8" value="a"> A. Swapping processes between RAM and
+                        disk</label><br>
+                    <label><input type="radio" name="q8" value="b"> B. Allocating fixed-sized blocks of
+                        memory</label><br>
+                </div>
+                <div class="label-div">
+                    <label><input type="radio" name="q8" value="c"> C. Managing process priority</label><br>
+                    <label><input type="radio" name="q8" value="d"> D. None of the above</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>9. What is a system call in operating systems?</p>
+                <div class="label-div">
+                    <label><input type="radio" name="q9" value="a"> A. A call to the system administrator</label><br>
+                    <label><input type="radio" name="q9" value="b"> B. A request for system resources or
+                        services</label><br>
+                </div>
+                <div class="label-div">
+                    <label><input type="radio" name="q9" value="c"> C. A user interface component</label><br>
+                    <label><input type="radio" name="q9" value="d"> D. None of the above</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>10. What is CPU scheduling in operating systems?</p>
+                <div class="label-div">
+                    <label><input type="radio" name="q10" value="a"> A. Allocating CPU time to processes</label><br>
+                    <label><input type="radio" name="q10" value="b"> B. Managing external devices</label><br>
+                </div>
+                <div class="label-div">
+                    <label><input type="radio" name="q10" value="c"> C. Handling interrupts</label><br>
+                    <label><input type="radio" name="q10" value="d"> D. None of the above</label>
+                </div>
+            </div>
+            <button
+                style="display: flex;justify-content: center;align-items: center;text-align: center;margin-left: 40%;"
+                type="button" class="submit-button" onclick="calculateScore()">Submit</button>
+        </form>
+    </div>
+
+
+
+
+
+
+    <!-- The Modal -->
+    <div id="scoreModal" class="modal">
+
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="scoreText"></p>
+        </div>
+    </div>
+
+
+    <footer id="contact-div">
+        <div class="visiting">
+            <div style="margin-bottom: 0;">
+                <h1 style="margin-bottom: 0px;">Thanks for Visiting !</h1>
+            </div>
+            <div>
+                <p
+                    style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 22px;margin-top: 0;">
+                    ©Anusha Gonal.</p>
+            </div>
+        </div>
+        <div class="contact-me-icons">
+            <div class="">
+                <button style="background: none;border: none;">
+                    <a href='mailto:anushamg2005@gmail.com'><img class="email-icon"
+                            src="/Quiz QuonTest/images/email.png"></a>
+                </button>
+            </div>
+            <div>
+                <button style="background: none;border: none;">
+                    <a href="https://github.com/anusha1205"><img class="github-icon"
+                            src="/Quiz QuonTest/images/github.png"></a>
+                </button>
+            </div>
+            <div>
+                <button style="background: none;border: none;">
+                    <a href="https://www.linkedin.com/in/anusha-gonal-440ab5283/"><img class="linkedin-icon"
+                            src="/Quiz QuonTest/images/linkedin.png"></a>
+                </button>
+            </div>
+            <div>
+                <button style="background: none;border: none;">
+                    <a href="https://www.instagram.com/gonal_1205/"><img class="linkedin-icon"
+                            src="/Quiz QuonTest/images/instagram_logo.png"></a>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+</body>
+
+</html>

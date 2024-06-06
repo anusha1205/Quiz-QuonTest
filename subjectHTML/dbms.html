@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DBMS Quiz</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@500&family=Raleway:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:wght@500&family=Raleway:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="/Quiz QuonTest/images/logo.jpg">
+
+
+    <link rel="stylesheet" href="/Quiz QuonTest/style.css">
+    <link rel="stylesheet" href="/Quiz QuonTest/subjectcss/dbms.css">
+    <script src="/Quiz QuonTest/subjectJS/dbms.js"></script>
+
+    <!-- CHART for score -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+    <nav>
+        <div class="navbar-brand">
+            <a href="/Quiz QuonTest/index.html" style="display: flex;align-items: flex-end;"><img
+                    src="/Quiz QuonTest/images/logo.jpg" alt="Q" style="width: 15%;border-radius: 100%;">uiz
+                QuonTest</a>
+        </div>
+        <div class="navbar-links">
+            <a href="#">Create Your Quiz</a>
+            <a href="#"><button type="button" class="score-button" onclick="calculateScore()">Score</button></a>
+            <a href="#contact-div">Contact</a>
+            <a href="" style="gap: 8px;width: fit-content;"><img src="/Quiz QuonTest/images/profileimage.png"
+                    alt="Your-profile" style="border-radius: 100%;width: 25%;">Profile</a>
+        </div>
+    </nav>
+    <div class="container-2">
+        <h1>Database Management System Quiz</h1>
+        <form id="quizForm">
+            <div class="question">
+                <p>1. What does SQL stand for?</p>
+                <div class="label-div">
+                    <label><input type="radio" name="Q1" value="a"> A. Structured Query Language</label><br>
+                    <label><input type="radio" name="Q1" value="b"> B. System Question Language</label><br>
+                </div>
+                <div class="label-div">
+                    <label><input type="radio" name="Q1" value="c"> C. Standard Query Language</label><br>
+                    <label><input type="radio" name="Q1" value="d"> D. Simple Query Language</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>2. Which of the following is not a type of database model?</p>
+                <div class="label-div">
+                    <label><input type="radio" name="Q2" value="a"> A. Relational Database Model</label><br>
+                    <label><input type="radio" name="Q2" value="b"> B. Object-Oriented Database Model</label><br>
+                </div>
+                <div class="label-div">
+                    <label><input type="radio" name="Q2" value="c"> C. Hierarchical Database Model</label><br>
+                    <label><input type="radio" name="Q2" value="d"> D. Parallel Database Model</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>3. What is the role of a database administrator (DBA) in database management?</p>
+                <div class="label-div">
+                    <label><input type="radio" name="Q3" value="a"> A. To write SQL queries</label><br>
+                    <label><input type="radio" name="Q3" value="b"> B. To design database schemas</label><br>
+                </div>
+                <div class="label-div">
+                    <label><input type="radio" name="Q3" value="c"> C. To manage and maintain databases</label><br>
+                    <label><input type="radio" name="Q3" value="d"> D. To create database views</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>4. Which data model organizes data in a tree-like structure?</p>
+                <div class="label-div">
+                    <label><input type="radio" name="Q4" value="a"> A. Relational Model</label><br>
+                    <label><input type="radio" name="Q4" value="b"> B. Hierarchical Model</label><br>
+                </div>
+                <div class="label-div">
+                    <label><input type="radio" name="Q4" value="c"> C. Object-Oriented Model</label><br>
+                    <label><input type="radio" name="Q4" value="d"> D. Network Model</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>5. What is normalization in database design?</p>
+                <div class="label-div">
+                    <label><input type="radio" name="Q5" value="a"> A. Combining multiple tables into one</label><br>
+                    <label><input type="radio" name="Q5" value="b"> B. Reducing data redundancy and
+                        dependency</label><br>
+                </div>
+                <div class="label-div">
+                    <label><input type="radio" name="Q5" value="c"> C. Adding redundant data for performance</label><br>
+                    <label><input type="radio" name="Q5" value="d"> D. Creating complex queries</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>6. Which SQL command is used to retrieve specific columns from a table?</p>
+                <div class="label-div">
+                    <label><input type="radio" name="Q6" value="a"> A. SELECT</label><br>
+                    <label><input type="radio" name="Q6" value="b"> B. UPDATE</label><br>
+                </div>
+                <div class="label-div">
+                    <label><input type="radio" name="Q6" value="c"> C. DELETE</label><br>
+                    <label><input type="radio" name="Q6" value="d"> D. INSERT</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>7. What is the primary key in a database table?</p>
+                <div class="label-div">
+                    <label><input type="radio" name="Q7" value="a"> A. A key that uniquely identifies each row in a
+                        table</label><br>
+                    <label><input type="radio" name="Q7" value="b"> B. A key that is used for sorting data</label><br>
+                </div>
+                <div class="label-div">
+                    <label><input type="radio" name="Q7" value="c"> C. A key that allows duplicate values</label><br>
+                    <label><input type="radio" name="Q7" value="d"> D. A key that is used for foreign key
+                        constraints</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>8. Which SQL clause is used to filter records based on a specified condition?</p>
+                <div class="label-div">
+                    <label><input type="radio" name="Q8" value="a"> A. ORDER BY</label><br>
+                    <label><input type="radio" name="Q8" value="b"> B. GROUP BY</label><br>
+                </div>
+                <div class="label-div">
+                    <label><input type="radio" name="Q8" value="c"> C. WHERE</label><br>
+                    <label><input type="radio" name="Q8" value="d"> D. HAVING</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>9. What is a foreign key in a database?</p>
+                <div class="label-div">
+                    <label><input type="radio" name="Q9" value="a"> A. A key used to identify unique records</label><br>
+                    <label><input type="radio" name="Q9" value="b"> B. A key used for sorting data</label><br>
+                </div>
+                <div class="label-div">
+                    <label><input type="radio" name="Q9" value="c"> C. A key used for joining tables</label><br>
+                    <label><input type="radio" name="Q9" value="d"> D. A key used to establish relationships between
+                        tables</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>10. Which type of join returns all rows when there is a match in one of the tables?</p>
+                <div class="label-div">
+                    <label><input type="radio" name="Q10" value="a"> A. INNER JOIN</label><br>
+                    <label><input type="radio" name="Q10" value="b"> B. LEFT JOIN</label><br>
+                </div>
+                <div class="label-div">
+                    <label><input type="radio" name="Q10" value="c"> C. RIGHT JOIN</label><br>
+                    <label><input type="radio" name="Q10" value="d"> D. FULL JOIN</label>
+                </div>
+            </div>
+            <button
+                style="display: flex;justify-content: center;align-items: center;text-align: center;margin-left: 40%;"
+                type="button" class="submit-button" onclick="calculateScore()">Submit</button>
+        </form>
+    </div>
+
+
+
+
+
+
+    <!-- The Modal -->
+    <div id="scoreModal" class="modal">
+
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="scoreText"></p>
+        </div>
+    </div>
+
+
+    <footer id="contact-div">
+        <div class="visiting">
+            <div style="margin-bottom: 0;">
+                <h1 style="margin-bottom: 0px;">Thanks for Visiting !</h1>
+            </div>
+            <div>
+                <p
+                    style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 22px;margin-top: 0;">
+                    ©Anusha Gonal.</p>
+            </div>
+        </div>
+        <div class="contact-me-icons">
+            <div class="">
+                <button style="background: none;border: none;">
+                    <a href='mailto:anushamg2005@gmail.com'><img class="email-icon"
+                            src="/Quiz QuonTest/images/email.png"></a>
+                </button>
+            </div>
+            <div>
+                <button style="background: none;border: none;">
+                    <a href="https://github.com/anusha1205"><img class="github-icon"
+                            src="/Quiz QuonTest/images/github.png"></a>
+                </button>
+            </div>
+            <div>
+                <button style="background: none;border: none;">
+                    <a href="https://www.linkedin.com/in/anusha-gonal-440ab5283/"><img class="linkedin-icon"
+                            src="/Quiz QuonTest/images/linkedin.png"></a>
+                </button>
+            </div>
+            <div>
+                <button style="background: none;border: none;">
+                    <a href="https://www.instagram.com/gonal_1205/"><img class="linkedin-icon"
+                            src="/Quiz QuonTest/images/instagram_logo.png"></a>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+</body>
+
+</html>

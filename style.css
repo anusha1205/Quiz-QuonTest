@@ -43,7 +43,8 @@ nav {
 }
 
 .navbar-brand a:hover {
-    color: #6e6e6e;
+    color: #333333;
+    transition: 0.3s ease;
 }
 
 .navbar-links {
@@ -68,7 +69,7 @@ nav {
 }
 
 .navbar-links a:hover {
-    color: #90a7be;
+    color: #6e6e6e;
 }
 
 .navbar-links a.active {
@@ -348,7 +349,7 @@ nav {
     align-self: center;
 }
 .github-icon:hover , .linkedin-icon:hover{
-    transition: 0.25s;
+    transition: 0.4s ease-in-out;
     height: 51px;
 }
 .contact-me-icons{
