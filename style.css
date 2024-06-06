@@ -3,6 +3,9 @@ body {
     /* background-image: linear-gradient(rgb(24, 50, 133), rgb(19, 41, 87),rgb(14, 14, 47) ); */
     background-image: linear-gradient(90deg, #061d2c, rgb(40, 90, 114), #061d2c);
     color: white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
 
 }
 
@@ -80,7 +83,7 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10%;
+    /* gap: 10%; */
     margin: 2% 10%;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -96,6 +99,7 @@ nav {
 
 .custom-select select {
     display: flex;
+    justify-content: center;
     padding: 10px;
     font-size: 16px;
     font-family: "Montserrat", sans-serif;
@@ -105,7 +109,7 @@ nav {
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #cab9a0;
-
+    width: fit-content;
 }
 
 .custom-select select:hover {
@@ -131,6 +135,25 @@ nav {
     cursor: pointer;
 }
 
+
+
+
+
+
+
+
+
+/* SUBJECT DIVISION */
+.container{
+    height: 100vh;
+    display: flex;
+
+}
+.quiz{
+    position: absolute;
+    width: 100%;
+    background-color: green;
+}
 
 
 
