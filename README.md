@@ -17,9 +17,10 @@ Quiz-QuonTest is a fun and engaging quiz website designed to test your knowledge
 3. Answer questions and submit to see your score.
 4. Enjoy learning in a fun way!
 
-##To-Be-Noted:
-- This website only contains 2 subjects for now
-- per
+## To-Be-Noted:
+- This website only contains 2 subjects for now.
+- Personalised profile to be added in future for keeping previous scores of individuals in remembrance.
+- The subjects have basic questions for now.
 
 ## Future Planning
 - Advanced Quiz Categories
