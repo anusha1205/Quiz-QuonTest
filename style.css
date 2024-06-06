@@ -18,6 +18,17 @@ body {
 
 
 /* big nav */
+.menu-icon{
+    display: none;
+}
+.menu-and-link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4%;
+    width: 50%;
+}
 nav {
     border-bottom: solid white;
     border-width: 0.3px;
@@ -53,7 +64,7 @@ nav {
     align-items: center;
     justify-content: center;
     gap: 4%;
-    width: 55%;
+    width: 100%;
 }
 
 /* menu buttons */
@@ -97,12 +108,16 @@ nav {
 
 
 
+.custom-select {
+    display: flex;
+    justify-content: center;
+}
 
 .custom-select select {
     display: flex;
     justify-content: center;
     padding: 10px;
-    font-size: 16px;
+    font-size: 1rem;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -110,7 +125,8 @@ nav {
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #cab9a0;
-    width: fit-content;
+    width: 80%;
+    text-align: center;
 }
 
 .custom-select select:hover {
@@ -145,12 +161,13 @@ nav {
 
 
 /* SUBJECT DIVISION */
-.container{
+.container {
     height: 100vh;
     display: flex;
 
 }
-.quiz{
+
+.quiz {
     position: absolute;
     width: 100%;
     background-color: green;
@@ -165,13 +182,13 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    
+
 }
 
 .subject-div {
     display: flex;
     justify-content: center;
-    
+
     width: 40%;
     margin: 2%;
     height: 50%;
@@ -189,10 +206,16 @@ nav {
     padding: 5% 7%;
     justify-content: space-evenly;
     width: 100%;
-    
+
     border: inset #948979;
     border-radius: 20px;
     background-color: #051b2b;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
 }
 
 .buttons button {
@@ -239,10 +262,10 @@ nav {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(.9);
-    width: 500px;
+    width: 40%;
     border-radius: 8px;
     padding: 2%;
-    font-size: 1.2rem;
+    font-size: 1rem;
     transition: ease-in;
     opacity: 0;
     pointer-events: none;
@@ -317,12 +340,12 @@ nav {
 
 
 /* contact me div things */
-#contact-div{
+#contact-div {
     background-color: #cab9a0;
     color: rgb(7, 5, 37);
     margin-top: 5%;
     height: 150px;
-    display:  flex;
+    display: flex;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -332,30 +355,43 @@ nav {
     flex-direction: row;
     gap: 4rem;
 }
-.visiting{
+
+.contact-me-icons {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2%;
+    /* gap: 5%; */
+}
+
+.contact-me-icons div{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.visiting {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
 }
+
 .email-icon {
     height: 40px;
 }
-.email-icon:hover{
+
+.email-icon:hover {
     transition: 0.2s;
     height: 50px;
 }
-.github-icon, .linkedin-icon{
+
+.github-icon,
+.linkedin-icon {
     height: 40px;
     align-self: center;
 }
-.github-icon:hover , .linkedin-icon:hover{
+
+.github-icon:hover,
+.linkedin-icon:hover {
     transition: 0.4s ease-in-out;
     height: 51px;
-}
-.contact-me-icons{
-    display: flex;
-    justify-content: space-evenly;
-    gap: 15%;
 }
 
 
@@ -373,17 +409,99 @@ nav {
 
 
 /* RESPONSIVE MEDIA */
-@media screen and (max-width: 768px) {
-    nav {
-        padding: 10px;
+@media screen and (max-width: 850px) {
+    .diff-subject {
+        flex-direction: column;
+    }
+
+    .menu-icon {
+        display: flex;
     }
 
     .navbar-links {
+        display: none;
+        flex-direction: column;
+        border: 0;
+        align-items: center;
+    }
+    .menu-and-link{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar-links a {
+        margin-bottom: 8px;
+        text-align: center;
+        padding: 10px 0;
+        border-bottom: 1px solid white;
+        border: 0;
+        font-size: 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+        background-color: #051b2b;
+        border: outset beige;
+        border-radius: 10px;
+        padding: 2%;
+        position: absolute;
+        right: 40%;
+        top: 20%;
+    }
+
+    .subjects {
+        flex-direction: column;
+    }
+
+    .subjects .two-sub {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .two-sub .subject-div {
+        justify-content: center;
+
+        width: 75%;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    p{
+        font-size: 0.7rem;
+    }
+
+
+    #contact-div {
         display: flex;
         flex-direction: column;
     }
 
-    .navbar-links a {
-        margin-bottom: 8px;
+
+
+
+}
+
+
+@media (min-width: 0) and (max-width: 500px) {
+    /* .navbar{
+        flex-direction: column;
+    } */
+
+    .menu-and-link{
+        width: 10%;
+    }
+    .navbar-brand a{
+        font-size: 23px;
+    }
+
+
+    h1{
+        font-size: 1rem;
+    }
+    #contact-div{
+        font-size: 1rem;
     }
 }
+
