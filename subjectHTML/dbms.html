@@ -30,20 +30,28 @@
 </head>
 
 <body>
-    <nav>
+    <nav class="navbar">
         <div class="navbar-brand">
-            <a href="/Quiz QuonTest/index.html" style="display: flex;align-items: flex-end;"><img
-                    src="/Quiz QuonTest/images/logo.jpg" alt="Q" style="width: 15%;border-radius: 100%;">uiz
-                QuonTest</a>
+            <a class="navbar-brand" href="/Quiz QuonTest/index.html" style="display: flex; align-items: flex-end;">
+                <img src="/Quiz QuonTest/images/logo.jpg" alt="Q" style="width: 15%; border-radius: 100%;">uiz QuonTest
+            </a>
         </div>
-        <div class="navbar-links">
-            <a href="#">Create Your Quiz</a>
-            <a href="#"><button type="button" class="score-button" onclick="calculateScore()">Score</button></a>
-            <a href="#contact-div">Contact</a>
-            <a href="" style="gap: 8px;width: fit-content;"><img src="/Quiz QuonTest/images/profileimage.png"
-                    alt="Your-profile" style="border-radius: 100%;width: 25%;">Profile</a>
+        <div class="menu-and-link">
+            <div class="menu-icon">
+                <img src="/Quiz QuonTest/images/menu-icon.png" alt="Menu Icon" style="width: 30px;">
+            </div>
+            <div class="navbar-links">
+                <a href="#">Create Your Quiz</a>
+                <a href="#"><button type="button" class="score-button" onclick="calculateScore()">Score</button></a>
+                <a href="#contact-div">Contact</a>
+                <a href="#" style="display: flex; align-items: center; gap: 8px;">
+                    <img src="/Quiz QuonTest/images/profileimage.png" alt="Your-profile"
+                        style="border-radius: 100%; width: 25%;">Profile
+                </a>
+            </div>
         </div>
     </nav>
+
     <div class="container-2">
         <h1>Database Management System Quiz</h1>
         <form id="quizForm">
