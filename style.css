@@ -220,9 +220,10 @@ nav {
     gap: 10%;
 }
 
-.buttons button {
+.buttons a button {
     background-color: #cab9a0;
-    padding: 1.8% 2%;
+    padding: 8% 9%;
+    
     font-size: 1rem;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
